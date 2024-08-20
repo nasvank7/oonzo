@@ -1,0 +1,107 @@
+/* General container styling */
+.product-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Main detail container */
+  .product-detail {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+  }
+  
+  /* Image styling */
+  .product-detail-image {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Info section styling */
+  .product-detail-info {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Title styling */
+  .product-detail-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Description styling */
+  .product-detail-description {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  /* Price styling */
+  .product-detail-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+  }
+  
+  /* Rating styling */
+  .product-detail-rating {
+    font-size: 1rem;
+    color: #999;
+  }
+  
+  /* Shimmer effect styles */
+  .shimmer-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Base shimmer effect */
+  .shimmer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  /* Skeleton for image */
+  .skeleton-image {
+    width: 50%;
+    height: 300px;
+    background-color: #e0e0e0;
+  }
+  
+  /* Skeleton for text elements */
+  .skeleton-text {
+    height: 20px;
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  
